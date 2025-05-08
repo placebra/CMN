@@ -98,6 +98,7 @@ public class Server {
         User u1 = new User("Artem");
         Computer u2 = new Computer();
         Server.playGame(u1, u2);
+        System.out.println("Это была игра " + u1.name + " против " + u2.name);
     }
 }
 
