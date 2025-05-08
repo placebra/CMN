@@ -6,9 +6,9 @@ public class Computer extends Player{
     }
     public void createInput() {
         switch (new Random().nextInt(3)) {
-            case 0 -> input = "Камень";
-            case 1 -> input = "Ножницы";
-            case 2 -> input = "Бумага";
+            case 0 -> input = "камень";
+            case 1 -> input = "ножницы";
+            case 2 -> input = "бумага";
         }
     }
 }

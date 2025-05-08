@@ -7,8 +7,8 @@ public abstract class Player {
     String input;
     int score;
 
-    public int getScore() {
-        return score;
+    public String getScore() {
+        return name + " " + score;
     }
     abstract void createInput();
 }
