@@ -99,7 +99,6 @@ public class Server {
         Computer u2 = new Computer();
         Server.playGame(u1, u2);
         System.out.println("Это была игра " + u1.name + " против " + u2.name);
-        System.out.println("Test records");
     }
 }
 
