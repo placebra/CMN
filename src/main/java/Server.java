@@ -2,9 +2,16 @@ public class Server {
 
     public static void playGame(Player p1, Player p2) {
         System.out.println("Добро пожаловать в игру");
+
         INNER: while (true) {
             p1.createInput();
             p2.createInput();
+            if (p1.input.equals("перезапуск") || p2.input.equals("перезапуск")) {
+                p1.score = 0;
+                p2.score = 0;
+                System.out.println("Счета обнулены");
+                continue INNER;
+            }
             if(p1.input.equals("выход") || p2.input.equals("выход")) {
                 System.out.println("Игра закончена \n Счет \n" + p1.getScore() +  " | " + p2.getScore());
                 break INNER;

@@ -7,7 +7,7 @@ public class User extends Player{
 
     public void createInput() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("\nВведите ваш выбор: Камень/Ножницы/Бумага \nДля выхода введите Выход");
+        System.out.println("\nВведите ваш выбор: Камень/Ножницы/Бумага \nДля выхода введите Выход, Для перезапуска введите Перезапуск");
         input = sc.nextLine().toLowerCase();
     }
 
